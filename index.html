@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paola Alejandra Ccarita Apaza | Perfil</title>
+<meta name="description" content="Administración de Redes y Telecomunicaciones. Mi LinkedIn, CV y contacto en un solo lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #12060c;
+    --bg2: #3a1230;
+    --surface: rgba(34,12,26,.84);
+    --text: #fdeaf1;
+    --muted: #d6aebf;
+    --line: #6a3050;
+    --accent: #f08db0;
+    --accent-text: #2a0d1e;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { min-height: 100%; }
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    background: radial-gradient(ellipse at 50% 20%, var(--bg2), var(--bg) 75%) fixed;
+    color: var(--text);
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  main { width: 100%; max-width: 440px; position: relative; z-index: 1; }
+  .lado { position: fixed; top: 0; z-index: 0; pointer-events: none; opacity: .9; }
+  .lado svg { display: block; height: 100vh; width: auto; }
+  .izq { left: 0; }
+  .der { right: 0; transform: scale(-1,-1); }
+  .tallo { fill: none; stroke: #2a7a63; stroke-width: 4; stroke-linecap: round; }
+  .tallo.fino { stroke-width: 2.5; opacity: .75; }
+  .paquete { fill: none; stroke: #ffb3cd; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1 22; animation: flujo 9s linear infinite; }
+  .paquete.p2 { animation-duration: 12s; animation-direction: reverse; }
+  @keyframes flujo { to { stroke-dashoffset: -230; } }
+  .senal path { fill: none; stroke: #f08db0; stroke-width: 2; stroke-linecap: round; animation: senal 2.6s ease-in-out infinite; }
+  .senal path:nth-child(2) { animation-delay: .3s; }
+  .senal path:nth-child(3) { animation-delay: .6s; }
+  @keyframes senal { 0%,100% { opacity: .15; } 40% { opacity: 1; } }
+  .nodo { fill: #f08db0; animation: senal 3.2s ease-in-out infinite; }
+  .perfil { text-align: center; margin-bottom: 30px; }
+  .foto {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg);
+    box-shadow: 0 0 0 3px var(--accent), 0 0 24px rgba(240,141,176,.35);
+    background: var(--line);
+    margin-bottom: 18px;
+  }
+  h1 { font-family: "Fraunces", Georgia, serif; font-size: 1.9rem; line-height: 1.2; margin-bottom: 8px; }
+  .rol { color: var(--muted); font-size: 1rem; line-height: 1.5; }
+  .carrera {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 14px; padding: 8px 16px;
+    border: 1px solid var(--accent); border-radius: 999px;
+    font-size: .85rem; font-weight: 500;
+    background: var(--surface);
+  }
+  .carrera svg { width: 18px; height: 18px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
+  .enlaces { list-style: none; padding: 0; display: grid; gap: 14px; }
+  .enlaces a {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px;
+    background: var(--surface);
+    backdrop-filter: blur(6px);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    transition: border-color .15s, transform .15s;
+  }
+  .enlaces a:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .enlaces a:focus-visible, .correo a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .enlaces svg { width: 24px; height: 24px; flex: none; fill: var(--accent); }
+  .enlaces .cv { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .enlaces .cv svg { fill: var(--accent-text); }
+  .correo { text-align: center; margin-top: 26px; }
+  .correo a {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--text); font-size: .95rem; font-weight: 500;
+    text-decoration: none; padding: 6px 8px;
+    border-bottom: 1px solid var(--accent);
+    background: var(--surface);
+    overflow-wrap: anywhere;
+  }
+  .correo svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  footer { text-align: center; margin-top: 28px; color: var(--muted); font-size: .85rem; }
+  @media (prefers-reduced-motion: reduce) {
+    .paquete, .senal path, .nodo { animation: none; opacity: .8; }
+    .enlaces a { transition: none; }
+    .enlaces a:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="rosa">
+<circle r="25" fill="#8e2347"/><path d="M-21 -5C-15 -27 15 -27 21 -5C17 15 -15 17 -21 -5Z" fill="#b92e5b"/>
+<path d="M-13 -4C-9 -19 11 -19 13 -4C9 9 -9 11 -13 -4Z" fill="#d8497a"/>
+<path d="M-6 -3C-4 -11 7 -11 7 -2C4 5 -3 6 -6 -3Z" fill="#f08db0"/>
+<path d="M-21 -5C-9 3 9 3 21 -5M-13 -4C-4 2 5 2 13 -4" stroke="#f6b3cb" stroke-width="1.2" fill="none" opacity=".7"/></g></defs></svg>
+<div class="lado izq" aria-hidden="true"><svg viewBox="0 0 260 1000" preserveAspectRatio="xMinYMid meet"><path d="M176.4 -20 L175.4 -10 L174.3 0 L173.0 10 L171.7 20 L170.3 30 L168.7 40 L167.1 50 L165.5 60 L163.7 70 L161.9 80 L160.0 90 L158.1 100 L156.2 110 L154.2 120 L152.2 130 L150.2 140 L148.2 150 L146.3 160 L144.3 170 L142.3 180 L140.4 190 L138.5 200 L136.7 210 L135.0 220 L133.3 230 L131.6 240 L130.1 250 L128.7 260 L127.3 270 L126.0 280 L124.9 290 L123.9 300 L122.9 310 L122.1 320 L121.5 330 L120.9 340 L120.5 350 L120.2 360 L120.0 370 L120.0 380 L120.1 390 L120.4 400 L120.7 410 L121.2 420 L121.9 430 L122.6 440 L123.5 450 L124.5 460 L125.6 470 L126.8 480 L128.1 490 L129.6 500 L131.1 510 L132.7 520 L134.3 530 L136.1 540 L137.9 550 L139.7 560 L141.6 570 L143.6 580 L145.5 590 L147.5 600 L149.5 610 L151.5 620 L153.5 630 L155.5 640 L157.4 650 L159.3 660 L161.2 670 L163.1 680 L164.8 690 L166.5 700 L168.2 710 L169.7 720 L171.2 730 L172.5 740 L173.8 750 L175.0 760 L176.0 770 L177.0 780 L177.8 790 L178.5 800 L179.0 810 L179.5 820 L179.8 830 L180.0 840 L180.0 850 L179.9 860 L179.7 870 L179.3 880 L178.8 890 L178.2 900 L177.5 910 L176.6 920 L175.6 930 L174.5 940 L173.3 950 L172.0 960 L170.6 970 L169.1 980 L167.5 990 L165.9 1000 L164.2 1010 L162.4 1020" class="tallo fino"/><path d="M176.4 -20 L175.4 -10 L174.3 0 L173.0 10 L171.7 20 L170.3 30 L168.7 40 L167.1 50 L165.5 60 L163.7 70 L161.9 80 L160.0 90 L158.1 100 L156.2 110 L154.2 120 L152.2 130 L150.2 140 L148.2 150 L146.3 160 L144.3 170 L142.3 180 L140.4 190 L138.5 200 L136.7 210 L135.0 220 L133.3 230 L131.6 240 L130.1 250 L128.7 260 L127.3 270 L126.0 280 L124.9 290 L123.9 300 L122.9 310 L122.1 320 L121.5 330 L120.9 340 L120.5 350 L120.2 360 L120.0 370 L120.0 380 L120.1 390 L120.4 400 L120.7 410 L121.2 420 L121.9 430 L122.6 440 L123.5 450 L124.5 460 L125.6 470 L126.8 480 L128.1 490 L129.6 500 L131.1 510 L132.7 520 L134.3 530 L136.1 540 L137.9 550 L139.7 560 L141.6 570 L143.6 580 L145.5 590 L147.5 600 L149.5 610 L151.5 620 L153.5 630 L155.5 640 L157.4 650 L159.3 660 L161.2 670 L163.1 680 L164.8 690 L166.5 700 L168.2 710 L169.7 720 L171.2 730 L172.5 740 L173.8 750 L175.0 760 L176.0 770 L177.0 780 L177.8 790 L178.5 800 L179.0 810 L179.5 820 L179.8 830 L180.0 840 L180.0 850 L179.9 860 L179.7 870 L179.3 880 L178.8 890 L178.2 900 L177.5 910 L176.6 920 L175.6 930 L174.5 940 L173.3 950 L172.0 960 L170.6 970 L169.1 980 L167.5 990 L165.9 1000 L164.2 1010 L162.4 1020" class="paquete p2"/><path d="M63.4 -20 L66.7 -10 L70.0 0 L73.3 10 L76.6 20 L79.8 30 L83.0 40 L86.0 50 L88.9 60 L91.7 70 L94.4 80 L96.8 90 L99.0 100 L101.1 110 L102.8 120 L104.4 130 L105.7 140 L106.7 150 L107.4 160 L107.8 170 L108.0 180 L107.9 190 L107.5 200 L106.8 210 L105.8 220 L104.6 230 L103.0 240 L101.3 250 L99.3 260 L97.1 270 L94.7 280 L92.1 290 L89.3 300 L86.4 310 L83.4 320 L80.2 330 L77.0 340 L73.7 350 L70.4 360 L67.1 370 L63.8 380 L60.6 390 L57.4 400 L54.4 410 L51.4 420 L48.6 430 L46.0 440 L43.5 450 L41.2 460 L39.2 470 L37.4 480 L35.8 490 L34.5 500 L33.5 510 L32.7 520 L32.2 530 L32.0 540 L32.1 550 L32.5 560 L33.1 570 L34.1 580 L35.3 590 L36.7 600 L38.5 610 L40.4 620 L42.6 630 L45.0 640 L47.6 650 L50.3 660 L53.2 670 L56.3 680 L59.4 690 L62.6 700 L65.9 710 L69.2 720 L72.5 730 L75.7 740 L79.0 750 L82.2 760 L85.2 770 L88.2 780 L91.0 790 L93.7 800 L96.2 810 L98.5 820 L100.6 830 L102.4 840 L104.0 850 L105.3 860 L106.4 870 L107.2 880 L107.7 890 L108.0 900 L107.9 910 L107.6 920 L107.0 930 L106.1 940 L104.9 950 L103.5 960 L101.8 970 L99.8 980 L97.7 990 L95.3 1000 L92.8 1010 L90.0 1020" class="tallo"/><path d="M63.4 -20 L66.7 -10 L70.0 0 L73.3 10 L76.6 20 L79.8 30 L83.0 40 L86.0 50 L88.9 60 L91.7 70 L94.4 80 L96.8 90 L99.0 100 L101.1 110 L102.8 120 L104.4 130 L105.7 140 L106.7 150 L107.4 160 L107.8 170 L108.0 180 L107.9 190 L107.5 200 L106.8 210 L105.8 220 L104.6 230 L103.0 240 L101.3 250 L99.3 260 L97.1 270 L94.7 280 L92.1 290 L89.3 300 L86.4 310 L83.4 320 L80.2 330 L77.0 340 L73.7 350 L70.4 360 L67.1 370 L63.8 380 L60.6 390 L57.4 400 L54.4 410 L51.4 420 L48.6 430 L46.0 440 L43.5 450 L41.2 460 L39.2 470 L37.4 480 L35.8 490 L34.5 500 L33.5 510 L32.7 520 L32.2 530 L32.0 540 L32.1 550 L32.5 560 L33.1 570 L34.1 580 L35.3 590 L36.7 600 L38.5 610 L40.4 620 L42.6 630 L45.0 640 L47.6 650 L50.3 660 L53.2 670 L56.3 680 L59.4 690 L62.6 700 L65.9 710 L69.2 720 L72.5 730 L75.7 740 L79.0 750 L82.2 760 L85.2 770 L88.2 780 L91.0 790 L93.7 800 L96.2 810 L98.5 820 L100.6 830 L102.4 840 L104.0 850 L105.3 860 L106.4 870 L107.2 880 L107.7 890 L108.0 900 L107.9 910 L107.6 920 L107.0 930 L106.1 940 L104.9 950 L103.5 960 L101.8 970 L99.8 980 L97.7 990 L95.3 1000 L92.8 1010 L90.0 1020" class="paquete"/><path d="M78.3 25.2L93.1 28.9L81.3 34.8ZM90.7 66.2L80.2 77.3L93.3 75.8ZM100.5 107.1L114.8 112.6L102.3 116.9ZM106.5 148.0L94.2 157.0L107.3 158.0ZM107.9 189.0L120.6 197.5L107.6 199.0ZM104.6 230.1L90.5 236.0L103.1 239.9ZM96.9 271.1L107.6 282.0L94.5 280.9ZM85.7 312.2L71.0 316.1L82.8 321.8ZM72.7 353.3L82.5 364.9L69.5 362.7ZM59.3 394.2L44.5 398.0L56.3 403.8ZM47.2 435.2L57.8 446.1L44.7 444.8ZM38.0 476.1L23.9 481.8L36.4 485.9ZM32.9 517.0L45.4 525.7L32.3 527.0ZM32.3 558.0L19.8 566.8L32.9 568.0ZM36.6 599.1L50.7 604.8L38.2 608.9ZM45.0 640.2L34.4 651.2L47.5 649.8ZM56.6 681.2L71.4 685.0L59.6 690.8ZM69.9 722.3L60.1 733.9L73.0 731.7ZM83.2 763.2L97.9 767.1L86.1 772.8ZM94.8 804.1L84.0 815.0L97.1 813.9ZM103.3 845.1L117.3 851.1L104.7 854.9ZM107.6 886.0L94.9 894.5L108.0 896.0ZM107.2 927.0L119.5 936.1L106.4 937.0ZM102.1 968.1L87.9 973.5L100.3 977.9Z" fill="#3f9a7f"/><path d="M171.0 25.1L178.7 34.3L169.5 34.9ZM162.3 78.1L152.0 84.3L160.4 87.9ZM152.0 131.1L159.3 140.7L150.1 140.9ZM141.5 184.1L131.2 190.3L139.7 193.9ZM132.1 237.1L139.8 246.4L130.6 246.9ZM124.9 290.0L115.1 297.1L123.8 300.0ZM120.7 343.0L129.4 351.3L120.4 353.0ZM120.2 396.0L111.5 404.3L120.5 406.0ZM123.4 449.0L133.1 456.1L124.4 459.0ZM129.8 502.1L122.2 511.3L131.4 511.9ZM138.8 555.1L149.1 561.3L140.6 564.9ZM149.1 608.1L141.9 617.7L151.1 617.9ZM159.6 661.1L169.9 667.3L161.4 670.9ZM168.8 714.1L161.1 723.3L170.3 723.9ZM175.7 767.0L185.5 774.1L176.7 777.0ZM179.5 820.0L170.7 828.3L179.8 830.0ZM179.6 873.0L188.3 881.4L179.2 883.0ZM176.1 926.0L166.3 933.0L175.0 936.0ZM169.3 979.1L176.9 988.4L167.7 988.9Z" fill="#3f9a7f"/><g transform="translate(107.9 190) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(33.1 570) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(107.6 920) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(120.0 380) scale(0.7)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(176.0 770) scale(0.7)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><circle class="nodo" cx="160.0" cy="90" r="4.5"/><circle class="nodo" cx="125.6" cy="470" r="4.5"/><circle class="nodo" cx="163.1" cy="680" r="4.5"/><circle class="nodo" cx="167.5" cy="990" r="4.5"/></svg></div><div class="lado der" aria-hidden="true"><svg viewBox="0 0 260 1000" preserveAspectRatio="xMinYMid meet"><path d="M176.4 -20 L175.4 -10 L174.3 0 L173.0 10 L171.7 20 L170.3 30 L168.7 40 L167.1 50 L165.5 60 L163.7 70 L161.9 80 L160.0 90 L158.1 100 L156.2 110 L154.2 120 L152.2 130 L150.2 140 L148.2 150 L146.3 160 L144.3 170 L142.3 180 L140.4 190 L138.5 200 L136.7 210 L135.0 220 L133.3 230 L131.6 240 L130.1 250 L128.7 260 L127.3 270 L126.0 280 L124.9 290 L123.9 300 L122.9 310 L122.1 320 L121.5 330 L120.9 340 L120.5 350 L120.2 360 L120.0 370 L120.0 380 L120.1 390 L120.4 400 L120.7 410 L121.2 420 L121.9 430 L122.6 440 L123.5 450 L124.5 460 L125.6 470 L126.8 480 L128.1 490 L129.6 500 L131.1 510 L132.7 520 L134.3 530 L136.1 540 L137.9 550 L139.7 560 L141.6 570 L143.6 580 L145.5 590 L147.5 600 L149.5 610 L151.5 620 L153.5 630 L155.5 640 L157.4 650 L159.3 660 L161.2 670 L163.1 680 L164.8 690 L166.5 700 L168.2 710 L169.7 720 L171.2 730 L172.5 740 L173.8 750 L175.0 760 L176.0 770 L177.0 780 L177.8 790 L178.5 800 L179.0 810 L179.5 820 L179.8 830 L180.0 840 L180.0 850 L179.9 860 L179.7 870 L179.3 880 L178.8 890 L178.2 900 L177.5 910 L176.6 920 L175.6 930 L174.5 940 L173.3 950 L172.0 960 L170.6 970 L169.1 980 L167.5 990 L165.9 1000 L164.2 1010 L162.4 1020" class="tallo fino"/><path d="M176.4 -20 L175.4 -10 L174.3 0 L173.0 10 L171.7 20 L170.3 30 L168.7 40 L167.1 50 L165.5 60 L163.7 70 L161.9 80 L160.0 90 L158.1 100 L156.2 110 L154.2 120 L152.2 130 L150.2 140 L148.2 150 L146.3 160 L144.3 170 L142.3 180 L140.4 190 L138.5 200 L136.7 210 L135.0 220 L133.3 230 L131.6 240 L130.1 250 L128.7 260 L127.3 270 L126.0 280 L124.9 290 L123.9 300 L122.9 310 L122.1 320 L121.5 330 L120.9 340 L120.5 350 L120.2 360 L120.0 370 L120.0 380 L120.1 390 L120.4 400 L120.7 410 L121.2 420 L121.9 430 L122.6 440 L123.5 450 L124.5 460 L125.6 470 L126.8 480 L128.1 490 L129.6 500 L131.1 510 L132.7 520 L134.3 530 L136.1 540 L137.9 550 L139.7 560 L141.6 570 L143.6 580 L145.5 590 L147.5 600 L149.5 610 L151.5 620 L153.5 630 L155.5 640 L157.4 650 L159.3 660 L161.2 670 L163.1 680 L164.8 690 L166.5 700 L168.2 710 L169.7 720 L171.2 730 L172.5 740 L173.8 750 L175.0 760 L176.0 770 L177.0 780 L177.8 790 L178.5 800 L179.0 810 L179.5 820 L179.8 830 L180.0 840 L180.0 850 L179.9 860 L179.7 870 L179.3 880 L178.8 890 L178.2 900 L177.5 910 L176.6 920 L175.6 930 L174.5 940 L173.3 950 L172.0 960 L170.6 970 L169.1 980 L167.5 990 L165.9 1000 L164.2 1010 L162.4 1020" class="paquete p2"/><path d="M63.4 -20 L66.7 -10 L70.0 0 L73.3 10 L76.6 20 L79.8 30 L83.0 40 L86.0 50 L88.9 60 L91.7 70 L94.4 80 L96.8 90 L99.0 100 L101.1 110 L102.8 120 L104.4 130 L105.7 140 L106.7 150 L107.4 160 L107.8 170 L108.0 180 L107.9 190 L107.5 200 L106.8 210 L105.8 220 L104.6 230 L103.0 240 L101.3 250 L99.3 260 L97.1 270 L94.7 280 L92.1 290 L89.3 300 L86.4 310 L83.4 320 L80.2 330 L77.0 340 L73.7 350 L70.4 360 L67.1 370 L63.8 380 L60.6 390 L57.4 400 L54.4 410 L51.4 420 L48.6 430 L46.0 440 L43.5 450 L41.2 460 L39.2 470 L37.4 480 L35.8 490 L34.5 500 L33.5 510 L32.7 520 L32.2 530 L32.0 540 L32.1 550 L32.5 560 L33.1 570 L34.1 580 L35.3 590 L36.7 600 L38.5 610 L40.4 620 L42.6 630 L45.0 640 L47.6 650 L50.3 660 L53.2 670 L56.3 680 L59.4 690 L62.6 700 L65.9 710 L69.2 720 L72.5 730 L75.7 740 L79.0 750 L82.2 760 L85.2 770 L88.2 780 L91.0 790 L93.7 800 L96.2 810 L98.5 820 L100.6 830 L102.4 840 L104.0 850 L105.3 860 L106.4 870 L107.2 880 L107.7 890 L108.0 900 L107.9 910 L107.6 920 L107.0 930 L106.1 940 L104.9 950 L103.5 960 L101.8 970 L99.8 980 L97.7 990 L95.3 1000 L92.8 1010 L90.0 1020" class="tallo"/><path d="M63.4 -20 L66.7 -10 L70.0 0 L73.3 10 L76.6 20 L79.8 30 L83.0 40 L86.0 50 L88.9 60 L91.7 70 L94.4 80 L96.8 90 L99.0 100 L101.1 110 L102.8 120 L104.4 130 L105.7 140 L106.7 150 L107.4 160 L107.8 170 L108.0 180 L107.9 190 L107.5 200 L106.8 210 L105.8 220 L104.6 230 L103.0 240 L101.3 250 L99.3 260 L97.1 270 L94.7 280 L92.1 290 L89.3 300 L86.4 310 L83.4 320 L80.2 330 L77.0 340 L73.7 350 L70.4 360 L67.1 370 L63.8 380 L60.6 390 L57.4 400 L54.4 410 L51.4 420 L48.6 430 L46.0 440 L43.5 450 L41.2 460 L39.2 470 L37.4 480 L35.8 490 L34.5 500 L33.5 510 L32.7 520 L32.2 530 L32.0 540 L32.1 550 L32.5 560 L33.1 570 L34.1 580 L35.3 590 L36.7 600 L38.5 610 L40.4 620 L42.6 630 L45.0 640 L47.6 650 L50.3 660 L53.2 670 L56.3 680 L59.4 690 L62.6 700 L65.9 710 L69.2 720 L72.5 730 L75.7 740 L79.0 750 L82.2 760 L85.2 770 L88.2 780 L91.0 790 L93.7 800 L96.2 810 L98.5 820 L100.6 830 L102.4 840 L104.0 850 L105.3 860 L106.4 870 L107.2 880 L107.7 890 L108.0 900 L107.9 910 L107.6 920 L107.0 930 L106.1 940 L104.9 950 L103.5 960 L101.8 970 L99.8 980 L97.7 990 L95.3 1000 L92.8 1010 L90.0 1020" class="paquete"/><path d="M78.3 25.2L93.1 28.9L81.3 34.8ZM90.7 66.2L80.2 77.3L93.3 75.8ZM100.5 107.1L114.8 112.6L102.3 116.9ZM106.5 148.0L94.2 157.0L107.3 158.0ZM107.9 189.0L120.6 197.5L107.6 199.0ZM104.6 230.1L90.5 236.0L103.1 239.9ZM96.9 271.1L107.6 282.0L94.5 280.9ZM85.7 312.2L71.0 316.1L82.8 321.8ZM72.7 353.3L82.5 364.9L69.5 362.7ZM59.3 394.2L44.5 398.0L56.3 403.8ZM47.2 435.2L57.8 446.1L44.7 444.8ZM38.0 476.1L23.9 481.8L36.4 485.9ZM32.9 517.0L45.4 525.7L32.3 527.0ZM32.3 558.0L19.8 566.8L32.9 568.0ZM36.6 599.1L50.7 604.8L38.2 608.9ZM45.0 640.2L34.4 651.2L47.5 649.8ZM56.6 681.2L71.4 685.0L59.6 690.8ZM69.9 722.3L60.1 733.9L73.0 731.7ZM83.2 763.2L97.9 767.1L86.1 772.8ZM94.8 804.1L84.0 815.0L97.1 813.9ZM103.3 845.1L117.3 851.1L104.7 854.9ZM107.6 886.0L94.9 894.5L108.0 896.0ZM107.2 927.0L119.5 936.1L106.4 937.0ZM102.1 968.1L87.9 973.5L100.3 977.9Z" fill="#3f9a7f"/><path d="M171.0 25.1L178.7 34.3L169.5 34.9ZM162.3 78.1L152.0 84.3L160.4 87.9ZM152.0 131.1L159.3 140.7L150.1 140.9ZM141.5 184.1L131.2 190.3L139.7 193.9ZM132.1 237.1L139.8 246.4L130.6 246.9ZM124.9 290.0L115.1 297.1L123.8 300.0ZM120.7 343.0L129.4 351.3L120.4 353.0ZM120.2 396.0L111.5 404.3L120.5 406.0ZM123.4 449.0L133.1 456.1L124.4 459.0ZM129.8 502.1L122.2 511.3L131.4 511.9ZM138.8 555.1L149.1 561.3L140.6 564.9ZM149.1 608.1L141.9 617.7L151.1 617.9ZM159.6 661.1L169.9 667.3L161.4 670.9ZM168.8 714.1L161.1 723.3L170.3 723.9ZM175.7 767.0L185.5 774.1L176.7 777.0ZM179.5 820.0L170.7 828.3L179.8 830.0ZM179.6 873.0L188.3 881.4L179.2 883.0ZM176.1 926.0L166.3 933.0L175.0 936.0ZM169.3 979.1L176.9 988.4L167.7 988.9Z" fill="#3f9a7f"/><g transform="translate(107.9 190) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(33.1 570) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(107.6 920) scale(1)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(120.0 380) scale(0.7)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><g transform="translate(176.0 770) scale(0.7)"><use href="#rosa"/><g class="senal"><path d="M-5.7 -43.7A8 8 0 0 1 5.7 -43.7"/><path d="M-10.6 -48.6A15 15 0 0 1 10.6 -48.6"/><path d="M-15.6 -53.6A22 22 0 0 1 15.6 -53.6"/></g><circle cx="0" cy="-38" r="2.2" fill="#f08db0"/></g><circle class="nodo" cx="160.0" cy="90" r="4.5"/><circle class="nodo" cx="125.6" cy="470" r="4.5"/><circle class="nodo" cx="163.1" cy="680" r="4.5"/><circle class="nodo" cx="167.5" cy="990" r="4.5"/></svg></div>
+<main>
+  <header class="perfil">
+    <!-- Sube tu foto al repositorio con el nombre foto.jpg -->
+    <img class="foto" src="foto.jpg" alt="Foto de Paola Alejandra Ccarita Apaza">
+    <h1>Paola Alejandra<br>Ccarita Apaza</h1>
+    <p class="rol">Mis redes, mi CV y mi contacto en un solo lugar</p>
+    <p class="carrera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8 15.5a6 6 0 0 1 8 0"/><circle cx="12" cy="19" r="1.2"/></svg>Administración de Redes y Telecomunicaciones</p>
+  </header>
+
+  <ul class="enlaces">
+    <li>
+      <a class="cv" href="https://drive.google.com/drive/folders/1cdCSJHSZRAPBlgqAmkoiGr2CkkH709nc" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l6 6v14H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.5H8V13zm0 3h8v1.5H8V16z"/></svg>
+        Mi CV y documentos
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/paola-alejandra-ccarita-apaza-531374399" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3V9.75zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4V9.75z"/></svg>
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/51965446568?text=Hola%20Paola%2C%20vi%20tu%20perfil%20y%20quisiera%20contactarte." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.4-.2-2.3.6.6-2.2-.3-.4A8 8 0 0 1 12 4z"/><path d="M9 7.5c-.3 0-.6.2-.8.5-.4.5-.8 1.2-.4 2.3.6 1.700 2.2 3.500 4 4.400 1.3.6 2 .5 2.6.3.6-.2 1.1-.8 1.2-1.3.1-.4 0-.6-.2-.7l-1.6-.8c-.3-.1-.5 0-.7.2l-.5.6c-.1.2-.3.2-.5.100-.9-.4-1.800-1.1-2.3-2-.1-.2 0-.3.100-.5l.4-.5c.1-.2.1-.4 0-.6L9.6 7.900c-.1-.3-.3-.4-.6-.4z"/></svg>
+        WhatsApp · 965 446 568
+      </a>
+    </li>
+  </ul>
+
+  <div class="correo">
+    <a href="mailto:paolaalejandra.3004@gmail.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      paolaalejandra.3004@gmail.com
+    </a>
+  </div>
+
+  <footer>© Paola Alejandra Ccarita Apaza</footer>
+</main>
+</body>
+</html>
